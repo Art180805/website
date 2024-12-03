@@ -1,19 +1,18 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+*{
+    margin:0;
+    padding:0;
 }
 
-header, footer {
+footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 10px 0;
+    padding: 20px;
 }
 
 nav a {
     color: #fff;
-    margin: 0 10px;
+    margin: 10 10px;
     text-decoration: none;
 }
 
@@ -39,3 +38,38 @@ main {
 .members article img{
     border-radius: 50px;
 }
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    
+}
+:root {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+  }
+
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .dark-mode {
+    --bg-color: #121212;
+    --text-color: #ffffff;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    
+    border-bottom: 2px solid var(--text-color);
+  }
